@@ -1,0 +1,33 @@
+services:
+
+  mysqldb:
+    image: mysql:8.0
+    volumes:
+      - db_data_apikey:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: apikey
+      MYSQL_USER: apikey
+      MYSQL_PASSWORD: apikey
+    ports:
+      - 3306:3306
+
+  apikey:
+    depends_on:
+      - mysqldb
+    image: sbdi/apikey-dev
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./sbdi/data/config/apikey-config.yml:/data/apikey/config/apikey-config.yml
+
+volumes:
+  db_data_apikey:
+#  db_data_apikey_local:
+#    driver: local
+#    driver_opts:
+#      type: none
+#      o: bind
+#      device: "/home/mats/Documents/sbdi/apikey/db_data_apikey"

@@ -45,7 +45,7 @@ server:
 # Data source configuration
 dataSource:
   dbCreate: "none"
-  url: jdbc:mysql://localhost:3306/apikey?serverTimezone=Europe/Stockholm&zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8&useSSL=false
+  url: jdbc:mysql://127.0.0.1:3306/apikey?autoReconnect=true&connectTimeout=0&serverTimezone=Europe/Stockholm&zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
   username: apikey
   password: apikey
 
@@ -78,7 +78,7 @@ bie.baseURL: https://species.biodiversitydata.se
 bie.searchPath: /search
 
 # Skin options
-skin.layout: generic
+skin.layout: _main
 skin.fluidLayout: false
 skin.orgNameLong: Swedish Biodiversity Data Infrastructure
 skin.orgNameShort: SBDI
