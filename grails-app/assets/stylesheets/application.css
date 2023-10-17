@@ -8,9 +8,9 @@
 
 th.sortable.sorted a:after {
     display:inline-block;
-    content: "\00a0↓";
+    content: "\0000a0\002193";
 }
 
 th.sortable.sorted.desc a:after {
-    content: "\00a0↑";
+    content: "\0000a0\002191";
 }
