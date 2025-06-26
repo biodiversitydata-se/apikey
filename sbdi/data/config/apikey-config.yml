@@ -56,7 +56,7 @@ supportEmail: support@biodiversitydata.se
 homeUrl: https://tools.biodiversitydata.se
 mainTitle: Swedish Biodiversity Data Infrastructure
 emailSenderTitle: Swedish Biodiversity Data Infrastructure
-emailSender: admin@biodiversitydata.se
+emailSender: noreply@biodiversitydata.se
 
 sightings.url: /mine
 spatial.url: https://spatial.biodiversitydata.se?tool=log
