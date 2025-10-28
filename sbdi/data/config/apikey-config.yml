@@ -53,7 +53,7 @@ ala:
   baseURL: https://biodiversitydata.se
 
 supportEmail: support@biodiversitydata.se
-homeUrl: https://tools.biodiversitydata.se
+homeUrl: https://bioatlas.biodiversitydata.se
 mainTitle: Swedish Biodiversity Data Infrastructure
 emailSenderTitle: Swedish Biodiversity Data Infrastructure
 emailSender: noreply@biodiversitydata.se
@@ -71,7 +71,7 @@ userDetails:
 
 # Header and footer
 headerAndFooter:
-  baseURL: https://static.biodiversitydata.se
+  baseURL: https://bioatlas.biodiversitydata.se
   version: 2
 ala.baseURL: https://biodiversitydata.se
 bie.baseURL: https://species.biodiversitydata.se
@@ -81,8 +81,8 @@ bie.searchPath: /search
 skin.fluidLayout: false
 skin.orgNameLong: Swedish Biodiversity Data Infrastructure
 skin.orgNameShort: SBDI
-skin.favicon: https://static.biodiversitydata.se/favicon.ico
-skin.homeUrl: https://tools.biodiversitydata.se
+skin.favicon: https://bioatlas.biodiversitydata.se/favicon.ico
+skin.homeUrl: https://bioatlas.biodiversitydata.se
 
 spring:
   flyway:
