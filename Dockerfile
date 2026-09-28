@@ -6,7 +6,7 @@ RUN mkdir -p /data/apikey/config
 
 COPY build/libs/apikey-*-plain.war $CATALINA_HOME/webapps/apikey.war
 
-ENV DOCKERIZE_VERSION=v0.11.0
+ENV DOCKERIZE_VERSION=v0.15.1
 
 RUN apt-get update \
     && apt-get install -y wget \
